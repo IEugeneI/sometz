@@ -1,0 +1,68 @@
+<Response>
+    <Categories>
+        <Category>
+            <Name>Мобільний зв'язок та телефон</Name>
+            <Description>Мобільні оператори</Description>
+            <CategoryKey>MOBILE</CategoryKey>
+            <SubCategories>
+                <SubCategory>
+                    <Name>Київстар</Name>
+                    <Description>Оплата послуг зв'язку Київстар</Description>
+                    <SubCategoryKey>KYIVSTAR-SUBMENU</SubCategoryKey>
+                    <Services>
+                        <Service>
+                            <ServiceId>788</ServiceId>
+                            <ServiceKey>KYIVSTAR</ServiceKey>
+                            <Amount.Min>01.00</Amount.Min>
+                            <Amount.Max>1000.00</Amount.Max>
+                            <Name>Київстар. Оплата за номером телефону</Name>
+                            <Description>Поповнення рахунку Київстар</Description>
+                            <Template>GenericPayment</Template>
+                            <Fields>
+                                <Field>
+                                    <Name>Account</Name>
+                                    <Hint>Введіть номер телефону на який Ви бажаєте переказати кошти. Формат вводу:
+                                        380ХХХХХХХХХ
+                                    </Hint>
+                                    <Heading>НОМЕР ТЕЛЕФОНУ ОТРИМУВАЧА</Heading>
+                                    <Format>Phone</Format>
+                                    <Index>0</Index>
+                                    <Min>10</Min>
+                                    <Max>13</Max>
+                                </Field>
+                            </Fields>
+                        </Service>
+                    </Services>
+                </SubCategory>
+                <SubCategory>
+                    <Name>Vodafone</Name>
+                    <Description>Оплата послуг зв'язку Vodafone</Description>
+                    <SubCategoryKey>VODAFONE-SUBMENU</SubCategoryKey>
+                    <Services>
+                        <Service>
+                            <ServiceId>2571</ServiceId>
+                            <ServiceKey>VODAFONE</ServiceKey>
+                            <Amount.Min>01.00</Amount.Min>
+                            <Amount.Max>1000.00</Amount.Max>
+                            <Name>Сплата за номером телефону</Name>
+                            <Description>Сплата за номером телефону</Description>
+                            <Template>GenericPayment</Template>
+                            <Fields>
+                                <Field>
+                                    <Name>Account</Name>
+                                    <Hint>Введiть номер телефону, починаючи з коду оператора. Приклад 0501234567
+                                    </Hint>
+                                    <Heading>Номер телефону</Heading>
+                                    <Format>Phone</Format>
+                                    <Index>0</Index>
+                                    <Min>10</Min>
+                                    <Max>13</Max>
+                                </Field>
+                            </Fields>
+                        </Service>
+                    </Services>
+                </SubCategory>
+        </SubCategories>
+    </Category>
+</Categories>
+</Response>

@@ -17,8 +17,8 @@ $maincontroller->mainControll();
 <body>
     <form action="" method="post" enctype="multipart/form-data">
         <input type="hidden" name="MAX_FILE_SIZE" value="30000" />
-        Загрузить файл service: <input name="userfile" type="file" />
-        Загрузить файл commission: <input name="userfile2" type="file" />
+        Загрузить файл service: <input name="userfile" type="file" required />
+        Загрузить файл commission: <input name="userfile2" type="file" required />
         <p><input type="submit" value="Отправить файл" name="go"/></p>
     </form>
 
