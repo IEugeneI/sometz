@@ -5,7 +5,7 @@ Class Service extends dbconnect
 {
     public function create($service_id,$service_key,$amount_min,$amount_max,$name,$description,$template,$subcategory_id)
     {
-        $name=str_replace("'","\'",$name);
+
 
         $mysql=$this->dbconnect();
         $sql="INSERT INTO Service (`service_id`,`service_key`,`amount_min`,`amount_max`,`name`,`description`,`template`,`subcategory_id`) VALUES ('".$service_id."','".$service_key."','".$amount_min."','".$amount_max."','".$name."','".$description."','".$template."','".$subcategory_id."')";

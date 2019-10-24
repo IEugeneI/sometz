@@ -5,8 +5,8 @@ Class dbconnect
 {
     private $dbhost="localhost";
     private $dbusername="root";
-    private $dbpass="11111";
-    private $dbname="local.print";
+    private $dbpass="";
+    private $dbname="";
 
 
     public function dbconnect()

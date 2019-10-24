@@ -5,8 +5,7 @@ Class Subcategory extends dbconnect
 {
     public function create($name,$description,$subcategory_key,$category_id)
     {
-        $name=str_replace("'","\'",$name);
-        $description=str_replace("'","\'",$description);
+
 
         $mysql=$this->dbconnect();
         $sql="INSERT INTO Subcategory (`name`,`description`,`subcategory_key`,`category_id`) VALUES ('".$name."','".$description."','".$subcategory_key."','".$category_id."')";

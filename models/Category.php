@@ -5,7 +5,7 @@ Class Category extends dbconnect
 {
         public function create($name,$description,$category_key)
         {
-            $name=str_replace("'","\'",$name);
+
 
             $mysql=$this->dbconnect();
             $sql="INSERT INTO Category (`name`,`description`,`category_key`) VALUES ('".$name."','".$description."','".$category_key."')";
